@@ -1,6 +1,6 @@
 AI code completion
 
-This repo is dedicated to small research in AI code completion
+This repo is dedicated to small research in AI code completion <br>
 *rotating.py* and *settle_debts* are two files from my projects
 
 First one is geometry problem, implementation of 3d polyhedrons rotation, while second is some backend code.
