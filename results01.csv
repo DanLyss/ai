@@ -1,0 +1,74 @@
+Reference,Prediction
+"tuple[int, float,", 
+"-> str:
+ ",":
+    return f""{expense[0]}:{expense[1]}:{expense[2]}""
+
+
+def decodeExpense(expense: ExpenseItem) -> str:
+  "
+" object1, object2, object3, participants = data.split("":"")
+","  object1, object2, object3 = data.split("","")
+    participants = object1.split("","")
+ "
+"buildDebtSummaries(records: list[ExpenseItem]) -> list[DebtSummary]:
+  "," summary_debt(debt: dict[str, float]) -> dict[str, list[float, dict[str, float]]]:
+    summary = {}
+    for key, value in debt.items():
+        summary[key] = value
+    return"
+"    for person in record[3]:
+   ","     person = record['person']
+"
+"       summ = record[1]
+        shares_number","        payee = record[3][1]
+        summary[payer][1] += (shares_number - 1) * summ / shares_number
+        summary[payer][2] += (shares_number - 1) * summ / shares_number
+        summary[payer][3] += (shares_number -"
+"-= summ / shares_number
+                if payer in summary[lender][1]:
+                    summary[lender][1][payer]"," += summ / shares_number
+                summary[lender][1][payer] "
+"person_summary in summary.items():
+        person_summary = [person]"," person_summary in zip(person_list, person_summary_list):
+        formatted_summary.append(DebtSummary(person_summary))
+    return formatted_summary
+
+
+def get_formatted_summary(person_list: list[Person], person_summary_list: list[DebtSummary]) -> list[DebtSummary]:
+    formatted_summary = []
+    for person, person_summary in zip(person_list, person_summary_list):
+        formatted_summary"
+"n = len(values)
+    values.sort(key=lambda x: x[0], reverse=True)
+ ","     edges = {}
+        cumsum = 0
+        for value in values:
+            if value[0] not in edges:
+                edges[value[0]] = {}
+            if value[1] not in edges[value[0]]:
+                edges[value[0]][value[1]] = cumsum
+            cumsum += value[1]
+            edges[value"
+"    cumsum += values[i][0]
+      ",    
+"0:
+      "," 0:
+       "
+" for i in range(len(debts)):
+        mapping[i] = debts[i][0]
+    ","  for debts in debts:
+        for i in range(len(debts)):
+         "
+"if len(values) != 0:
+      ","     for edge in edges:
+            if edge not in edges:
+                edges[edge] = []
+            edges[edge].append(values[edge])
+    return edges
+
+
+def buildEdges(values: list[float]) -> dict:
+    edges = {}
+    for value i"
+7.6923076923076925,36.61228935092885,12.136081968730364,0.3421459745927831

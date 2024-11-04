@@ -1,0 +1,217 @@
+Reference,Prediction
+tkinter,". import *
+from. "
+"    self.x = x0
+      ",    
+"__str__(self):
+    "," __str__(self):
+     "
+"__repr__(self):
+    "," __init__(self, x, y, z):
+        self.x = x
+        self.y = y
+        self.z = z
+
+    def __repr__(self):
+     "
+      return self.x,       return self.x 
+      return self.x,"       return not self.__eq__(other)
+
+    def __hash__(self):
+        return hash((self.x, self.y))
+
+    def __eq__(self, other):
+        return self.x"
+"       elif self.x < 0 and self.y >= 0:
+            return math.atan(self.y / self.x) + math.pi
+        elif self.x < 0 and self.y < 0:
+            return math.atan(self.y / self.x) + math.pi
+      ","        elif self.x < 0 and self.y >= 0:
+            return math.atan(self.y / self.x) - 2 * math.pi
+        elif self.x < 0 and self.y < 0:
+            return math.atan(self.y / self.x) + 2 * math.pi
+        else:
+            return math.atan(self.y / self.x)
+
+    def __str__(self):
+        return ""(%.2f, %.2f)"" % (self.x, self.y)
+
+    def __repr__(self):
+        return ""(%.2f, %.2f)"" % (self.x, self.y)
+
+    def __eq__(self, other):
+        return self.x == other.x and self.y == other.y
+
+    def __ne__(self, other)"
+"     rotx = newx * math.cos(angle) - newy * math.sin(angle)
+        roty = newy * math.cos(angle) + newx * math.sin(angle)
+    ","      newz = self.z - other.z
+        self.x = newx
+        self.y = newy
+        self.z = newz
+
+    def scale(self, scale):
+        self.x = self.x * scale
+        self.y = self.y * scale
+        self.z = self.z * scale
+
+    def rotate(self, angle):
+        newx = self.x + angle * self.x
+        newy = self.y + angle * self.y
+        newz = self.z + angle * self.z
+        self.x = ne"
+"     rotx = newx * math.cos(angle) + newz * math.sin(angle)
+        rotz = newz * math.cos(angle) - newx * math.sin(angle)
+    ","      newy = self.y - other.y
+        neww = self.w - other.w
+        newh = self.h - other.h
+        self.x = newx
+        self.z = newz
+        self.y = newy
+        self.w = neww
+        self.h = newh
+
+    def rotateZ(self, other, angle):
+        newx = self.x + other.x
+        newz = self.z + other.z
+        newy = self.y + other.y
+        neww = self.w + other.w
+      "
+"     roty = newy * math.cos(angle) - newz * math.sin(angle)
+        rotz = newz * math.cos(angle) + newy * math.sin(angle)
+    ","      self.x = newx
+        self.y = newy
+     "
+"   Point.rotateX(self, other, angle)
+      ",   
+" self.x = (p2.x - p1.x)
+        self.y =","  self.x = p1.x - p2.x
+        self.y = p1.y - p2.y
+        self.z = p1.z - p2.z
+
+    def __str__(self):
+      "
+"  self.x += p1.x
+       ","   return self.x + p1.x + p1.y + p1.z
+
+    def __sub__(self, p1):
+        return self.x - p1.x + p1."
+"  self.x -= p1.x
+       ","   return self.x - p1.x
+        "
+"  self.x *= -1
+       ","   self.x *= -1
+        self.y *= -1
+        self.z *= -1
+
+    def __add__(self, p2):
+        self.x += p2.x
+        self.y += "
+"  self.x *= n
+       ","   return self.x * n
+        "
+    return (self.x ** 2 +,"     return self.x ** 2 + self.y ** 2 + self.z ** 2
+
+    def __str__(self):
+        return f""x: {self.x}"
+      return self.x,"       return self.x * other.x + self.y * other.y + self.z * other.z
+
+    def __add__(self, other):
+        return self.x + other.x + sel"
+"       newy = self.z * other.x - self.x * other.z
+       ","        newy = self.z * other.x - self.x * other.z
+        newz = self.y * other.y - self.z * other.x
+        return Vector(Point(0, 0, 0), Point(newx, newy, newz))
+
+    def __add__(self, other):
+        new"
+" num = len(points)
+        for i in","  self.points = points
+        self.num = len(points)
+
+    def __getitem__(self, i):
+        return self.points[i]
+
+    def __len__(self):
+        return self.num
+
+    def __iter__(self):
+        return iter(self.points)
+
+    def __rep"
+" a = Vector(self[0], self[2])
+       ","  a = Vector(self[0], self[1])
+        b = Vector(self[2], self[3])
+        a.normalize()
+        b.normalize()
+        return Vector.vectorm(a, b)
+
+    def dot(self, other):
+        a = Vector(sel"
+"          Point.rotate(self[i], based, angle)
+            centerx += self[i].x
+            centery +=","           if self[i].x == based.x and self[i].y == based.y:
+                self[i].x = based.x
+                self[i].y = based.y
+                return "
+"  return (Vector.scalar(Vector(Point(0, 0, 0), Point(0, 0, 1)), Face.normal(self)) /","   return math.atan2(self.y, self.x)
+
+    def __str__(self):
+        return ""Vector(%s, %s)"" % (self.x, self.y)
+
+    def __repr__(self):
+        return ""Vector(%s, %s)"" % (self.x, self.y)
+
+    def __eq__(self, other):
+        return self.x ="
+"   # print(part)
+        num = int(part // pix)
+        # print(Face.normal(self).x, Face.normal(self).y, Face.normal(self).z)
+    ","    num = (part - pix) * 255
+     "
+"self
+        n = Face.normal(f1)
+    "," self.f1
+        f2 = self.f2
+        return f1.is_visible() and f2.is_visible()
+
+    def is_visible_by_index(self, index):
+        f1 = self.f1
+        f2 "
+" num = len(faces)
+        for i in","  self.faces = faces
+        self.num = len(faces)
+
+    def __getitem__(self, i):
+        return self.faces[i]
+
+    def __len__(self):
+        return self.num
+
+    def __iter__(self):
+        return iter(self.faces)
+
+    def __repr__"
+"    for elem in self:
+   ","     """"""
+        Rotate the face based on the given angle.
+
+        :param based: The angle to rotate.
+        :param angle: The angle to rotate.
+        """"""
+"
+"= Canvas(root, width=800,","ork.geometry('1000x700') 
+w.title('Python Tkinter') 
+w.configure("
+"200)
+p3 = Point(200, 100, 200)
+p4 = Point(300, 200,"," 200)
+p3 = Point(100, 200, 300"
+"[p4, p1, p6]
+f5 = [p2, p1, p5]
+f6 = [p3, p2, p5]
+f7 = [p4, p3,"," [p4, p5, p6]
+f5 = [p5, p6, p7]
+"
+"Point(375, 300,", 
+6.451612903225806,32.76398059704879,14.694877275265153,0.3238015509319212
